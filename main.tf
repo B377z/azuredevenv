@@ -1,4 +1,4 @@
 resource "azurerm_resource_group" "app-netnotify" {
-  name     = "netnotify-rg"
-  location = "canadacentral"
+  name     = "${var.application_name}-${var.environment}-rg"
+  location = var.primary_region
 }
