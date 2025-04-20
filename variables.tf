@@ -9,3 +9,7 @@ variable "environment" {
 variable "primary_region" {
   type = string
 }
+
+variable "storage_account_name" {
+  type = string
+}
